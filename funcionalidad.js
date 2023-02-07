@@ -2,6 +2,8 @@ var operandoa;
 var operandob;
 var operancion;
 
+alert("Buenas, esta es la calculadora de Mauricio Barbona");
+
 function init() {
     //variables
     var resultado = document.getElementById("resultado");
