@@ -2,7 +2,26 @@ var operandoa;
 var operandob;
 var operancion;
 
-alert("Buenas, esta es la calculadora de Mauricio Barbona");
+
+const COTIZACION_DOLAR = 350;
+const cotizarDolar = (pesos) => pesos / COTIZACION_DOLAR;
+const cotizarPesos = (dolar) => dolar * COTIZACION_DOLAR;
+let seleccion = prompt("CALCULADORA DE DIVISA SELECCIONAR COTIZACION \n 1 - DOLARES A PESOS \n 2 -  PESOS A DOLAR ");
+let valor = prompt("VALOR");
+switch (seleccion) {
+    case "1":
+        alert(cotizarPesos(valor));
+        break;
+    case "2":
+        alert(cotizarDolar(valor));
+        break;
+    default:
+        break;
+}
+
+//-----------------------------//
+
+
 
 function init() {
     //variables
